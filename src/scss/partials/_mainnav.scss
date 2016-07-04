@@ -1,0 +1,8 @@
+.craftsvilla-navbar {
+	@include header-footer-bg;
+}
+.logo-container {
+	@include height-auto($h!important);
+	@include padding-left($pl:0 !important);
+	@include padding-right($pr:0 !important);
+}

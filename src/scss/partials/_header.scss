@@ -1,10 +1,11 @@
-.header {
-
+header {
+	@include position($pos:fixed);
+	@include width-percent;
 }
-.logo {
-  margin: -100px 0 0 -84px;
-  @include position(absolute, 50% 0 0 50%);
-  img {
 
-  }
-}
+//----------------------------------*\
+// Navigation
+//----------------------------------*/
+@import 'topnav.scss';
+@import 'mainnav.scss';
+@import 'megamenu.scss';

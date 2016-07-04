@@ -1,3 +1,53 @@
+// padding
 @mixin nopadding($zero:0px) {
-  padding: $zero;
+  padding: $zero !important;
 }
+// padding right
+@mixin padding-right($pr:auto) {
+  padding-right: $pr;
+}
+// padding left
+@mixin padding-left($pl:auto) {
+  padding-left: $pl;
+}
+// margin
+@mixin nomargin($zero:0px) {
+  margin: $zero;
+}
+// Header + Footer bg color
+@mixin header-footer-bg($hf-bg:#f5f3e8) {
+  background-color: $hf-bg;
+}
+
+// position
+@mixin position($pos:relative) {
+  position: $pos;
+}
+
+// width
+@mixin width-percent($w:100%) {
+  width: $w;
+}
+
+// height
+@mixin height-auto($h:auto) {
+  height: $h;
+}
+
+// fonts
+@mixin font-face($font:Lato) {
+  font-family: $font;
+}
+// fonts Weight
+@mixin font-weight($fontweight:400) {
+  font-weight: $fontweight;
+}
+// text decoration
+@mixin text-decoration($decoration:none) {
+  text-decoration: $decoration;
+}
+// Line height
+@mixin line-height($lheight:18px) {
+  line-height: $lheight;
+}
+

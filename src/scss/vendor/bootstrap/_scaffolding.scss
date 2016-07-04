@@ -25,10 +25,10 @@ html {
 }
 
 body {
-  font-family: $font-family-base;
+  @include font-face;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  color: $text-color;
+  color: $greyish-brown;
   background-color: $body-bg;
 }
 

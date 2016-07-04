@@ -1,0 +1,16 @@
+.craftsvilla-international {
+	@include header-footer-bg;
+	color: $brownish-grey;
+	@include height-auto($h:24px);
+	@include font-weight;
+	@include line-height($lheight:23px);
+}
+.craftsvilla-international a {
+	color:$brownish-grey;
+	@include text-decoration;
+}
+.craftsvilla-international a:hover {
+	color:$rouge;
+	@include text-decoration;
+}
+
