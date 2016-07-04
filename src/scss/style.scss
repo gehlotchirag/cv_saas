@@ -4,6 +4,7 @@
 
 @import 'mixins/_position.scss';
 @import 'mixins/_selection.scss';
+@import 'mixins/_helper.scss';
 
 //----------------------------------*\
 // CONFIG MODULES
@@ -43,4 +44,4 @@
 // VENDOR
 //----------------------------------*/
 
-@import 'vendor/_external.scss';
+@import 'vendor/_bootstrap.scss';
