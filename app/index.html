@@ -57,15 +57,33 @@
                     </a>
                 </div>
                 <div class="col-sm-8 col-xs-6">
-                    <div class="input-group autosuggest-section">
-                        <input id="searchval" type="text" class="form-control" placeholder="Eg: Salwar Suit, Lehnga, Kurtis">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">SEARCH</button>
-                        </span>
-                    </div><!-- /Search Panel -->
+                    <form id="search_mini_form" role="search" action="/searchresults" method="get" onsubmit="javascript:return fillvalues();">
+                        <div class="input-group autosuggest-section">
+                            <input id="searchval" type="text" class="form-control" placeholder="Eg: Salwar Suit, Lehnga, Kurtis">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default search-button" type="button" onclick="dataLayer.push({'event':'SearchPerformedEvent','eventName':'SearchPerformed','source':'homeScreen','suggestionUsed':'no'});">SEARCH</button>
+                            </span>
+                        </div><!-- /Search Panel -->
+                    </form>
                 </div>
             </div>
-           <div class="col-sm-5 col-xs-12 nopadding text-right">right</div>
+           <div class="col-sm-5 col-xs-12 nopadding text-right">
+                <div class="col-sm-5 col-xs-12 hidden-xs nopadding currency-container text-center">
+                    <!-- // -->
+                    <div class="dropdown">
+                        <span>Currency</span>
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">INR (&#x20B9;)<span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INR (&#x20B9;)</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INR (&#x20B9;)</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INR (&#x20B9;)</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INR (&#x20B9;)</a></li>
+                        </ul>
+                    </div>
+                    <!-- // -->
+                </div>
+                <dic class="col-xs-12 col-sm-7 nopadding authentication-container">right</dic>
+           </div>
         </div>
     </nav>
     <nav id="mega-menu">Bottom</nav>
@@ -80,11 +98,11 @@
 </div>
 <!-- // Content End -->
 
-<!-- // Footer Start -->    
+<!-- // Footer Start -->
 <footer class="containner-fluid nopadding footer-container">
-    
+
     <div class="container">
-        
+
         <h2>This is footer text</h2>
         <section class="col-xs-3">section 1</section>
         <section class="col-xs-3">section 2</section>
@@ -96,9 +114,10 @@
 
 </footer>
 <!-- // Footer End -->
-    
+
 
     <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
     <script src="assets/js/scripts.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

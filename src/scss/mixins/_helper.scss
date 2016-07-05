@@ -44,6 +44,10 @@
 @mixin text-decoration($decoration:none) {
 	text-decoration: $decoration;
 }
+// text color
+@mixin text-color($color: $greyish-brown) {
+	color: $color;
+}
 // Line height
 @mixin line-height($lheight:18px) {
 	line-height: $lheight;
