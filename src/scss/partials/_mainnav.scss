@@ -6,7 +6,6 @@
 	@include padding-left($pl:0 !important);
 	@include padding-right($pr:0 !important);
 }
-
 #search_mini_form {
 	border: solid 1px red;
 	@include nopadding(12px 0px);
@@ -54,4 +53,3 @@
 }
 
 }
-
