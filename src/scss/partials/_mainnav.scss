@@ -7,10 +7,3 @@
 	@include padding-left($pl:0 !important);
 	@include padding-right($pr:0 !important);
 }
-#searchval {
-	@include border-top();
-	@include border-right();
-	@include border-bottom();
-	@include border-left();
-	@include border-top-radius;
-}

@@ -1,6 +1,9 @@
 .footer-container {
-	@include background();
+	@include background-bg;
 	@include font-face;
-	border-top: 2px;
+	@include border-top(solid, $rouge, 2px);
 }
- 
+
+.footer-container ul {
+	
+}
