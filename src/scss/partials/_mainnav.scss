@@ -1,5 +1,5 @@
 .craftsvilla-navbar {
-	@include header-footer-bg;
+	@include background-bg;
 }
 .logo-container {
 	@include height-auto($h:auto !important);
