@@ -1,9 +1,55 @@
 .craftsvilla-navbar {
 	@include background-bg;
-	border:solid 1px red;
-}
+
 .logo-container {
 	@include height-auto($h:auto !important);
 	@include padding-left($pl:0 !important);
 	@include padding-right($pr:0 !important);
+}
+#search_mini_form {
+	border: solid 1px red;
+	@include nopadding(12px 0px);
+	#searchval {
+		@include border-top(solid, #e4d2be, 1px);
+		@include border-right(solid, #e4d2be, 1px);
+		@include border-bottom(solid, #e4d2be, 1px);
+		@include border-left(solid, #e4d2be, 1px);
+		@include height-auto(35px);
+		border-radius: 0px;
+	}
+	.search-button {
+		@include background-bg($rouge);
+		@include text-color(#ffffff);
+		@include font-weight(700);
+		letter-spacing: 1.5px;
+		border: solid 2px $rouge;
+	}
+}
+.currency-container, .authentication-container {
+	border: solid 1px red;
+	@include nopadding(12px 0px);
+}
+.currency-container {
+	.dropdown-toggle {
+		@include background-bg(transparent);
+		border: none;
+	}
+	.btn:active, .btn-default:active:focus, .open > .btn-default.dropdown-toggle:focus {
+		box-shadow: none;
+		@include background-bg(transparent);
+		border: none;
+		outline: none;
+	}
+	.dropdown-menu {
+		min-width: auto;
+		left: auto;
+		right: 22px;
+		border-radius: 0px;
+	}
+
+}
+.authentication-container {
+
+}
+
 }
