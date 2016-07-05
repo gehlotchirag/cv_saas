@@ -1,5 +1,5 @@
 .craftsvilla-international {
-	@include header-footer-bg;
+	@include background-bg;
 	color: $brownish-grey;
 	@include height-auto($h:24px);
 	@include font-weight;
@@ -12,5 +12,16 @@
 .craftsvilla-international a:hover {
 	color:$rouge;
 	@include text-decoration;
+}
+.icon-call, .icon-download {
+	@include width-percent($w: 12px);
+	@include height-auto($h: 12px);
+	@include border-top;
+	@include border-right;
+	@include border-bottom;
+	@include border-left;
+	@include display($dis: inline-flex);
+	@include display($dis: -webkit-inline-flex);
+	@include background-bg($bgcolor: red);
 }
 
