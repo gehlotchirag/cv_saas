@@ -4,6 +4,25 @@
 	@include border-top(solid, $rouge, 2px);
 }
 
-.footer-container ul {
+.footer-container ul{
 	
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	
+	li:nth-child(1) {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.4;
+		letter-spacing: 0.9px;
+		color: #4c4c4c;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		border: 2px solid red;
+		text-transform: uppercase;
+	}
+
+	li a {
+		
+	}
 }
