@@ -2,6 +2,7 @@
 	@include background-bg;
 	@include font-face;
 	@include border-top(solid, $rouge, 2px);
+	padding-bottom: 10px;
 }
 
 .footer-container ul{
@@ -9,20 +10,36 @@
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
+	font-weight: 400;
 	
+	li{
+		font-size: 14px;
+    	line-height: 1.4;
+		letter-spacing: 0.2px;
+    	color: $grey;
+	}
+
 	li:nth-child(1) {
-		font-weight: 400;
 		font-size: 16px;
 		line-height: 1.4;
 		letter-spacing: 0.9px;
-		color: #4c4c4c;
+		color: $greyish-brown;
 		margin-top: 20px;
 		margin-bottom: 10px;
-		border: 2px solid red;
+		border: 0px solid red;
 		text-transform: uppercase;
 	}
 
 	li a {
-		
+		@include text-decoration(none);
+		color: $grey;
+		cursor: pointer;
+    	line-height: 1.7;
+    	letter-spacing: .2px;
+	}
+
+	li a:hover {
+		@include text-decoration(none);
+		color: $rouge;
 	}
 }
