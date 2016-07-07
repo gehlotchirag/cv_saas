@@ -1,18 +1,18 @@
 // BG Color
-$beige: #f5f3e8;
-$beige-two: #eee4d1;
+$beige: #f5f3e8 !default;
+$beige-two: #eee4d1 !default;
 
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
-$brownish-grey: #626262;
-$greyish-brown: #4c4c4c;
-$rouge: #981937;
-
+$brownish-grey: #626262 !default;
+$greyish-brown: #4c4c4c !default;
+$rouge: #981937 !default;
+$grey: #888888 !default;
 //== Font size
 //
 //##
-$font-size: 14px;
+$font-size: 14px !default;
 
 //== Font
 //
