@@ -33,7 +33,7 @@
 }
 
 // fonts
-@mixin font-face($font:Lato) {
+@mixin font-face($font: $font-family-lato) {
 	font-family: $font;
 }
 // fonts Weight
@@ -82,5 +82,9 @@
 @mixin display($dis: block) {
 	display: $dis;
 }
-
-
+// sprite img
+%sprite-image {
+    background-repeat: no-repeat;
+		background-image: url('../assets/img/cv-sprites.png');
+		background-size: auto;
+}

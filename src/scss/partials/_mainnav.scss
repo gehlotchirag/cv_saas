@@ -30,6 +30,12 @@
 	@include nopadding(12px 0px);
 }
 .currency-container {
+	.dropdown {
+		span {
+			@include text-color($rouge);
+			font-size: 16px;
+		}
+	}
 	.dropdown-toggle {
 		@include background-bg(transparent);
 		border: none;
@@ -49,7 +55,34 @@
 
 }
 .authentication-container {
-
+	ul {
+		list-style: none;
+		@include nomargin;
+		@include nopadding;
+		float: right;
+		li {
+			@include display(inline-block);
+				float: left;
+				margin-left: 10px;
+			a {
+				@include text-color($rouge);
+				font-size: 16px;
+				float: left;
+				.icon {
+					@include width-percent(22px);
+					@include height-auto(22px);
+					float: left;
+					border: solid 1px green;
+				}
+				span {
+					margin-left: 5px;
+				}
+			}
+			a:hover {
+				@include text-decoration;
+			}
+		}
+	}
 }
 
 }
