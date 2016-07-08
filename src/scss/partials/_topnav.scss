@@ -22,5 +22,4 @@
 	@include border-left;
 	@include display($dis: inline-flex);
 	@include display($dis: -webkit-inline-flex);
-	@include background-bg($bgcolor: red);
 }

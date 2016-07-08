@@ -1,0 +1,102 @@
+[mob-menu-overlay] {
+  @include position(fixed);
+  @include width-percent;
+  @include height-auto(100%);
+  top: 0;
+  left: 0;
+  z-index: 1400;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+  @include display(none);
+}
+
+#mega-menu {
+  @include background-bg($beige-two);
+  ul[data-mega-menu] {
+    @include nomargin;
+    padding: 0px;
+    list-style: none;
+    li {
+      @include display(inline-block);
+      @include width-percent(auto);
+      float: left;
+      text-align: left;
+      padding: 0px 20px;
+      a {
+        padding: 5px 0px 2px 0px;
+        @include display(inline-block);
+        font-size: 13px;
+        @include font-weight(700);
+        color: $brownish-grey;
+        @include line-height(1.8);
+        text-align: center;
+        cursor: pointer;
+      }
+      a:hover {
+        @include text-decoration;
+      }
+    }
+    li:nth-of-type(2) {
+      padding: 0px 20px 0px 5px;
+    }
+    //
+    div[data-sub-menu] {
+      @include position(absolute);
+      @include background-bg(#fff);
+      @include width-percent;
+      @include height-auto(350px);
+      left: 0px;
+      z-index: -1;
+      box-shadow: 0 2px 4px 0 rgba(134, 134, 134, 0.5);
+      .sub-menu-wrapper {
+        padding: 0px 80px 0px 0px;
+        ul {
+          padding: 0px;
+          li {
+            padding: 15px 25px;
+            @include display(inline-block);
+            @include width-percent(16.666%);
+            float: left;
+            text-align: left;
+            @include height-auto(350px);
+            a {
+              font-size: $font-size;
+              color: $brownish-grey;
+              @include font-weight(700);
+              @include display(block);
+              @include width-percent;
+              float: left;
+              div.acc-arrow {
+                float: right;
+                @include width-percent(22px);
+                @include height-auto(22px);
+                @include position;
+                text-align: center;
+                span {
+                  @include position(absolute);
+                  @include width-percent;
+                  @include height-auto(2px);
+                  @include background-bg($rouge);
+                  left: 0px;
+                  top: 0px;
+                }
+              }
+            }
+            ul {
+              @include width-percent;
+              float: left;
+              margin-bottom: 10px;
+              li {
+                margin: 10px 0px;
+                a {
+                  color: $brownish-grey;
+                  font-size: $font-size;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
