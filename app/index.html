@@ -33,9 +33,9 @@
     <!-- //Main Nav -->
     <nav id="main-nav" class="craftsvilla-navbar" role="navigation">
         <div class="container">
-            <div class="col-sm-7 col-xs-12 nopadding text-left">
+            <div class="col-sm-7 col-xs-7 nopadding text-left">
                 <div class="col-sm-4 col-xs-6 nopadding">
-                    <a class="navbar-brand logo-container" rel="home" href="#" >
+                    <a class="logo-container" rel="home" href="#" >
                         <svg width="170px" height="28px" viewBox="0 0 203 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="cv-logo">
                         <title>cv_logo</title>
                         <desc>Created with Sketch.</desc>
@@ -56,7 +56,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-sm-8 col-xs-6">
+                <div class="col-sm-8 col-xs-6 hidden-xs">
                     <form id="search_mini_form" role="search" action="/searchresults" method="get" onsubmit="javascript:return fillvalues();">
                         <div class="input-group autosuggest-section">
                             <input id="searchval" type="text" class="form-control" placeholder="Eg: Salwar Suit, Lehnga, Kurtis">
@@ -67,7 +67,7 @@
                     </form>
                 </div>
             </div>
-           <div class="col-sm-5 col-xs-12 nopadding text-right">
+           <div class="col-sm-5 col-xs-5 nopadding text-right">
                 <div class="col-sm-5 col-xs-12 hidden-xs nopadding currency-container text-center">
                     <!-- // -->
                     <div class="dropdown">
@@ -82,13 +82,13 @@
                     </div>
                     <!-- // -->
                 </div>
-                <dic class="col-xs-12 col-sm-7 nopadding authentication-container">
+                <div class="col-xs-12 col-sm-7 nopadding authentication-container">
                   <ul authentication-list>
-                    <li><a href="#"><i class="icon"></i></a></li>
-                    <li><a href="#"><span class="hidden-xs">Cart</span><i class="icon"></i></a></li>
-                    <li><a href="#"><span class="hidden-xs">Sign In</span><i class="icon"></i></a></li>
+                    <li><a href="#"><i class="icon cv-wishlist"></i></a></li>
+                    <li><a href="#" data-cart><span class="hidden-xs">Cart <circle>0</circle></span><i class="icon cv-cart"></i></a></li>
+                    <li><a href="#"><span class="hidden-xs">Sign In</span><i class="icon cv-login"></i></a></li>
                   </ul>
-                </dic>
+                </div>
            </div>
         </div>
     </nav>
