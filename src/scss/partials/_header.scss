@@ -1,6 +1,7 @@
 header {
 	@include position($pos:fixed);
 	@include width-percent;
+	z-index: 9;
 }
 
 //----------------------------------*\
