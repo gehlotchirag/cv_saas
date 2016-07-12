@@ -1,12 +1,18 @@
 #search_mini_form {
 	@include nopadding(12px 0px);
-	#searchval {
-		@include border-top(solid, #e4d2be, 1px);
-		@include border-right(solid, #e4d2be, 1px);
-		@include border-bottom(solid, #e4d2be, 1px);
-		@include border-left(solid, #e4d2be, 1px);
-		@include height-auto(35px);
-		border-radius: 0px;
+	@include height-auto(59px);
+	.search-container {
+		@include height-auto(36px);
+		@include display;
+		@include position;
+		#searchval {
+			@include border-top(solid, #e4d2be, 1px);
+			@include border-right(solid, #e4d2be, 1px);
+			@include border-bottom(solid, #e4d2be, 1px);
+			@include border-left(solid, #e4d2be, 1px);
+			@include height-auto(35px);
+			border-radius: 0px;
+		}
 	}
 	.search-button {
 		@include background-bg($rouge);
@@ -14,5 +20,49 @@
 		@include font-weight(700);
 		letter-spacing: 1.5px;
 		border: solid 2px $rouge;
+	}
+}
+[role="search-list"] {
+	@include background-bg(#fff);
+	@include display(none);
+	@include position(absolute);
+	@include width-percent;
+	@include border-bottom-radius(5px);
+	border: solid 1px $grey2;
+	max-height: 200px;
+	padding: 0px;
+	list-style: none;
+	top: 35px;
+	overflow-x: auto;
+	li {
+		a {
+			@include text-decoration;
+			@include width-percent;
+			border-bottom: solid 1px $grey2;
+			padding: 10px;
+			color: $greyish-brown;
+			font-size: $font-size-sm;
+			float: left;
+			[search-data], [search-img] {
+				float: left;
+				display: block;
+			}
+			[search-category] {
+				float: right;
+				text-transform: uppercase;
+			}
+			[search-img] {
+				width: 40px;
+				height: 40px;
+				background-color: #dedede;
+				margin-right: 5px;
+				border: solid 1px #999;
+				text-align: center;
+			}
+		}
+		:hover {
+			@include background-bg($grey3);
+			@include text-decoration;
+		}
 	}
 }

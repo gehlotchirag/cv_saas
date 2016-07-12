@@ -64,11 +64,25 @@
                 <div class="col-sm-8 col-md-8 col-xs-6 hidden-xs hidden-sm">
                     <form id="search_mini_form" role="search" action="/searchresults" method="get" onsubmit="javascript:return fillvalues();">
                         <div class="input-group autosuggest-section">
-                            <input id="searchval" type="text" class="form-control" placeholder="Eg: Salwar Suit, Lehnga, Kurtis">
+                            <span class="search-container">
+                              <input id="searchval" type="text" class="form-control" placeholder="Eg: Salwar Suit, Lehnga, Kurtis">
+                              <!-- // Search List Data Start -->
+                              <ul role="search-list">
+                                <li><a href="#"><span search-img="">zzz</span> <span search-data="">Sharee</span><span search-category="">category</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee1</span><span search-category="">category1</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee2</span><span search-category="">category2</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee3</span><span search-category="">category3</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee4</span><span search-category="">category4</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee5</span><span search-category="">category5</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee6</span><span search-category="">category6</span></a></li>
+                              </ul>
+                              <!-- // Search List Data Data -->
+                            </span>
                             <span class="input-group-btn">
                                 <button class="btn btn-default search-button" type="button" onclick="dataLayer.push({'event':'SearchPerformedEvent','eventName':'SearchPerformed','source':'homeScreen','suggestionUsed':'no'});">SEARCH</button>
                             </span>
-                        </div><!-- /Search Panel -->
+                        </div>
+                        <!-- /Search Panel -->
                     </form>
                 </div>
             </div>
