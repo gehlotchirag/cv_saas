@@ -6,6 +6,7 @@ $mdm: 1120px;
 $lg: 1280px;
 
 // BG Color
+$white: #ffffff !default;
 $beige: #f5f3e8 !default;
 $beige-two: #eee4d1 !default;
 $white2: #fbfbfb;
@@ -29,7 +30,7 @@ $font-size-ex: 10px !default;
 //== Font
 //
 //##
-$font-family-lato:  "Lato", Helvetica, Arial, sans-serif !default;
+$font-family-lato:  'Lato', sans-serif !default;
 $font-family-roboto:  "Roboto", Helvetica, Arial, sans-serif !default;
 
 //== Header

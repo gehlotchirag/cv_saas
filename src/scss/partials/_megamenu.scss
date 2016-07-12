@@ -287,7 +287,7 @@
                   > span {
                     @include background-bg($rouge);
                     @include position;
-                    padding: 0 3px 1px;
+                    padding: 1px 3px 1px;
                     font-size: $font-size-sm;
                     color: #fff;
                     margin-left: 3px;
