@@ -23,6 +23,9 @@ minLength: minimum length of input before an HTTP request
 		$(this.options.el).keyup( function() {
 			setTimeout(_this.verifyInput(), _this.options.delay);
 		});
+		$(this.options.el).blur(function(){
+			$("").empty();
+		});
 	}
 
 	Typesearch.prototype.verifyInput = function(){
@@ -36,14 +39,14 @@ minLength: minimum length of input before an HTTP request
 
 	Typesearch.prototype.getData = function(term){
 		this.term = term;
-		$("#response").empty();
+		$("#tsresponse").empty();
 		//this.data = {};
 		
 		//console.log('dictionary: ' + JSON.stringify(this.dictionary));	
 		this.data = this.dictionary[this.term];
 		
 		
-		if(this.data){
+		if(this.data && this.options.cache){
 			console.log('data cache - HIT');
 			this.parseData(this.data); 
 			return;
@@ -82,12 +85,12 @@ minLength: minimum length of input before an HTTP request
 			this.type = el.type;
 			this.content = el.content;
 			if(this.type == "CATEGORY"){
-				$("#response").append('<li><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span></span>' + this.type + '</a></li>');
+				$("#tsresponse").append('<li><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span>' + this.type + '</span></a></li>');
 			}
 			else if(this.type == "product"){
-				$("#response").append('<li><img src="' + this.content.images + '"/><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span></span>' + this.type + '</a></li>');
+				$("#tsresponse").append('<li><img src="' + this.content.images + '"/><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span>' + this.type + '</span></a></li>');
 			}else if(this.type == "seller"){
-				$("#response").append('<li><img src="' + this.content.images + '"/><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span></span>' + this.type + '</a></li>');
+				$("#tsresponse").append('<li><img src="' + this.content.images + '"/><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span>' + this.type + '</span></a></li>');
 			}else{
 				//do nothing
 			}

@@ -5,10 +5,10 @@ window.onload = function(){
 
 function init(){
 	var typesearch_obj = new Typesearch({
-		el : '#searchterm',
-		delay: 10000,
+		el : '#searchval',
+		delay: 1000,
 		trending : false , 
-		cache : false,
+		cache : true,
 		minLength : 1
 	});
 }
