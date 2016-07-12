@@ -89,7 +89,7 @@
         <div class="container">
             <div class="col-sm-7 col-xs-7 nopadding text-left">
                 <div class="col-sm-12 col-md-4 col-xs-12 nopadding">
-                    <a class="mobile-menu visible-xs visible-sm" href="#">
+                    <a class="mobile-menu mobile-navbar visible-xs visible-sm" href="#">
                       <span></span>
                       <span></span>
                       <span></span>
@@ -118,11 +118,25 @@
                 <div class="col-sm-8 col-md-8 col-xs-6 hidden-xs hidden-sm">
                     <form id="search_mini_form" role="search" action="/searchresults" method="get" onsubmit="javascript:return fillvalues();">
                         <div class="input-group autosuggest-section">
-                            <input id="searchval" type="text" class="form-control" placeholder="Eg: Salwar Suit, Lehnga, Kurtis">
+                            <span class="search-container">
+                              <input id="searchval" type="text" class="form-control" placeholder="Eg: Salwar Suit, Lehnga, Kurtis">
+                              <!-- // Search List Data Start -->
+                              <ul role="search-list">
+                                <li><a href="#"><span search-img="">zzz</span> <span search-data="">Sharee</span><span search-category="">category</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee1</span><span search-category="">category1</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee2</span><span search-category="">category2</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee3</span><span search-category="">category3</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee4</span><span search-category="">category4</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee5</span><span search-category="">category5</span></a></li>
+                                <li><a href="#"><span search-data="">Sharee6</span><span search-category="">category6</span></a></li>
+                              </ul>
+                              <!-- // Search List Data Data -->
+                            </span>
                             <span class="input-group-btn">
                                 <button class="btn btn-default search-button" type="button" onclick="dataLayer.push({'event':'SearchPerformedEvent','eventName':'SearchPerformed','source':'homeScreen','suggestionUsed':'no'});">SEARCH</button>
                             </span>
-                        </div><!-- /Search Panel -->
+                        </div>
+                        <!-- /Search Panel -->
                     </form>
                 </div>
             </div>
@@ -227,7 +241,9 @@
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box">
-    									<a href="/cvfeeds/latest-fusion-dresses-20200.html?MID=megamenu_casualwear_MB_1"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/fusion_frenzy170X320.jpg" alt=""></a>
+    									<a href="/cvfeeds/latest-fusion-dresses-20200.html?MID=megamenu_casualwear_MB_1">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/fusion_frenzy170X320.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/fusion_frenzy170X320.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     						</ul>
@@ -295,13 +311,19 @@
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box">
-    									<a href="/cvfeeds/sarees-offers.html?MID=megamenu_sarees_MB_1"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_selling_saree.jpg" alt=""></a>
-    									<a href="/cvfeeds/best-sarees-offers-below-1999.html?MID=megamenu_sarees_MB_2"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Sarees_Under_1699.jpg" alt=""></a>
+    									<a href="/cvfeeds/sarees-offers.html?MID=megamenu_sarees_MB_1">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_selling_saree.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_selling_saree.jpg" alt="">
+                      </a>
+    									<a href="/cvfeeds/best-sarees-offers-below-1999.html?MID=megamenu_sarees_MB_2">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Sarees_Under_1699.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Sarees_Under_1699.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box long_image_box">
-    									<a href="/cvfeeds/occasional-wear-sarees-under-1299-20178.html?MID=megamenu_sarees_MB_3"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Designer_Drapes_170X320.jpg" alt=""></a>
+    									<a href="/cvfeeds/occasional-wear-sarees-under-1299-20178.html?MID=megamenu_sarees_MB_3">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Designer_Drapes_170X320.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Designer_Drapes_170X320.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     						</ul>
@@ -363,13 +385,19 @@
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box">
-    									<a href="/cvfeeds/designer-anarkali-suits-high-price.html?MID=megamenu_salwar suits_MB_1"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/anarkali_Under_1499.jpg" alt=""></a>
-    									<a href="/cvfeeds/pakistani-salwar-suits.html?MID=megamenu_salwar suits_MB_2"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/straight_suits.jpg" alt=""></a>
+    									<a href="/cvfeeds/designer-anarkali-suits-high-price.html?MID=megamenu_salwar suits_MB_1">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/anarkali_Under_1499.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/anarkali_Under_1499.jpg" alt="">
+                      </a>
+    									<a href="/cvfeeds/pakistani-salwar-suits.html?MID=megamenu_salwar suits_MB_2">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/straight_suits.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/straight_suits.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box long_image_box">
-    									<a href="/cvfeeds/women-patiala-patiyala.html?MID=megamenu_salwar suits_MB_3"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/patialas170X320.jpg" alt=""></a>
+    									<a href="/cvfeeds/women-patiala-patiyala.html?MID=megamenu_salwar suits_MB_3">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/patialas170X320.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/patialas170X320.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     						</ul>
@@ -431,13 +459,19 @@
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box">
-    									<a href="/cvfeeds/jewellery-offers.html?MID=megamenu_accessories_MB_1"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_sellling_lehenga.jpg" alt=""></a>
-    									<a href="/cvfeeds/pakistani-salwar-suits.html?MID=megamenu_salwar suits_MB_2"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/wedding_spl.jpg" alt=""></a>
+    									<a href="/cvfeeds/jewellery-offers.html?MID=megamenu_accessories_MB_1">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_sellling_lehenga.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_sellling_lehenga.jpg" alt="">
+                      </a>
+    									<a href="/cvfeeds/pakistani-salwar-suits.html?MID=megamenu_salwar suits_MB_2">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/wedding_spl.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/wedding_spl.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box long_image_box">
-    									<a href="/cvfeeds/ethnic-wear-starting-from-1299-20177.html?MID=megamenu_lehenga_MB_3"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Lovely_Lehenga_Sarees170X320.jpg" alt=""></a>
+    									<a href="/cvfeeds/ethnic-wear-starting-from-1299-20177.html?MID=megamenu_lehenga_MB_3">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Lovely_Lehenga_Sarees170X320.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Lovely_Lehenga_Sarees170X320.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     						</ul>
@@ -497,13 +531,19 @@
 
     							<li class="hidden-xs">
     								<div class="image_box">
-    									<a href="/cvfeeds/jewellery-offers.html?MID=megamenu_accessories_MB_1"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/bestselling_2.jpg" alt=""></a>
-    									<a href="/cvfeeds/gold-jewellery-designs-feeds.html?MID=megamenu_accessories_MB_2"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/musthaves.jpg" alt=""></a>
+    									<a href="/cvfeeds/jewellery-offers.html?MID=megamenu_accessories_MB_1">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/bestselling_2.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/bestselling_2.jpg" alt="">
+                      </a>
+    									<a href="/cvfeeds/gold-jewellery-designs-feeds.html?MID=megamenu_accessories_MB_2">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/musthaves.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/musthaves.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box long_image_box">
-    									<a href="/cvfeeds/latest-offers-jewellery-20210.html?MID=megamenu_accessories_MB_3"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Min_50_Off_170X320.jpg" alt=""></a>
+    									<a href="/cvfeeds/latest-offers-jewellery-20210.html?MID=megamenu_accessories_MB_3">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Min_50_Off_170X320.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Min_50_Off_170X320.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     						</ul>
@@ -550,13 +590,19 @@
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box">
-    									<a href="/cvfeeds/occasion-wear-for-men-20165.html?MID=megamenu_fashion&lifestyle_MB_1"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Kurta-Pyjama-Set.jpg" alt=""></a>
-    									<a href="/cvfeeds/summer-clothing-for-men-2016-20221.html?MID=megamenu_fashion&lifestyle_MB_2"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/summerspecial.jpg" alt=""></a>
+    									<a href="/cvfeeds/occasion-wear-for-men-20165.html?MID=megamenu_fashion&lifestyle_MB_1">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Kurta-Pyjama-Set.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Kurta-Pyjama-Set.jpg" alt="">
+                      </a>
+    									<a href="/cvfeeds/summer-clothing-for-men-2016-20221.html?MID=megamenu_fashion&lifestyle_MB_2">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/summerspecial.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/summerspecial.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box long_image_box">
-    									<a href="/cvfeeds/ethnic-casual-wear-for-men-20212.html?MID=megamenu_fashion&lifestyle_MB_3"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Ethnic_Casuals_170X320.jpg" alt=""></a>
+    									<a href="/cvfeeds/ethnic-casual-wear-for-men-20212.html?MID=megamenu_fashion&lifestyle_MB_3">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Ethnic_Casuals_170X320.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/Ethnic_Casuals_170X320.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     						</ul>
@@ -608,13 +654,19 @@
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box">
-    									<a href="/cvfeeds/fancy-home-decor-products-20223.html?MID=megamenu_homedecor_MB_1"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/fancydecor.jpg" alt=""></a>
-    									<a href="/cvfeeds/bed-sheet-starting-from-rs299-20196.html?MID=megamenu_homedecor_MB_2"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cottonbedsheets_170x150.jpg" alt=""></a>
+    									<a href="/cvfeeds/fancy-home-decor-products-20223.html?MID=megamenu_homedecor_MB_1">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/fancydecor.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/fancydecor.jpg" alt="">
+                      </a>
+    									<a href="/cvfeeds/bed-sheet-starting-from-rs299-20196.html?MID=megamenu_homedecor_MB_2">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cottonbedsheets_170x150.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cottonbedsheets_170x150.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box long_image_box">
-    									<a href="/cvfeeds/colourful-cushion-covers-20166.html?MID=megamenu_homedecor_MB_3"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cushion_covers_170X320.jpg" alt=""></a>
+    									<a href="/cvfeeds/colourful-cushion-covers-20166.html?MID=megamenu_homedecor_MB_3">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cushion_covers_170X320.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cushion_covers_170X320.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     						</ul>
@@ -675,13 +727,19 @@
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box">
-    									<a href="/cvfeeds/facial-kits-for-women-20222.html?MID=megamenu_personalcare_MB_1"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/facialkits_170x150.jpg" alt=""></a>
-    									<a href="/cvfeeds/oil-control-products-20197.html?MID=megamenu_personalcare_MB_2"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/skincare_170x150.jpg" alt=""></a>
+    									<a href="/cvfeeds/facial-kits-for-women-20222.html?MID=megamenu_personalcare_MB_1">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/facialkits_170x150.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/facialkits_170x150.jpg" alt="">
+                      </a>
+    									<a href="/cvfeeds/oil-control-products-20197.html?MID=megamenu_personalcare_MB_2">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/skincare_170x150.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/skincare_170x150.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     							<li class="hidden-xs">
     								<div class="image_box long_image_box">
-    									<a href="/cvfeeds/personal-care-products-20168.html?MID=megamenu_personalcare_MB_3"><img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_beautideals_170X320.jpg" alt=""></a>
+    									<a href="/cvfeeds/personal-care-products-20168.html?MID=megamenu_personalcare_MB_3">
+                        <img class="lazy-onload" data-src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_beautideals_170X320.jpg" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/best_beautideals_170X320.jpg" alt="">
+                      </a>
     								</div>
     							</li>
     						</ul>
@@ -710,6 +768,7 @@
 <!-- // Header End -->
 
 <!-- // Content Start -->
+
 <div class="container-fluid nopadding">
     <div class="container nopadding">
         <h1 class="text-center" style="min-height: 300px; padding-top: 100px;">CONTENT</h1>
@@ -885,5 +944,6 @@
     <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
     <script src="assets/js/scripts.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/js/custom.1464949999.js"></script>
 </body>
 </html>

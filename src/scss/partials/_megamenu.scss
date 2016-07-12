@@ -9,20 +9,57 @@
   cursor: pointer;
   @include display(none);
 }
-
+.animate-menu {
+  #mega-menu {
+    -webkit-transform: translate3d(0%, 0px, 0px);
+		-moz-transform: translate3d(0%, 0px, 0px);
+		-o-transform: translate3d(0%, 0px, 0px);
+		-ms-transform: translate3d(0%, 0px, 0px);
+		transform: translate3d(0%, 0px, 0px);
+  }
+}
 #mega-menu {
   @include background-bg($beige-two);
+  transition: transform 500ms ease 0s;
+  @media screen and (max-width: $sm) {
+    @include background-bg($beige-two);
+    @include width-percent(80%);
+    @include height-auto(100%);
+    @include position(fixed);
+    z-index: 1500;
+    top: 0px;
+    padding: 0px;
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+		-moz-transform: translate3d(-100%, 0px, 0px);
+		-o-transform: translate3d(-100%, 0px, 0px);
+		-ms-transform: translate3d(-100%, 0px, 0px);
+		transform: translate3d(-100%, 0px, 0px);
+    > div {
+      @include background-bg(#fff);
+      @include width-percent(100%);
+      @include height-auto(100%);
+      padding: 0px;
+      overflow-x: auto;
+      float: left;
+      transform: translateZ(0);
+    }
+  }
   ul[data-mega-menu] {
     @include nomargin;
     padding: 0px;
     list-style: none;
-    li {
+    > li {
       @include display(inline-block);
       @include width-percent(auto);
       float: left;
       text-align: left;
       padding: 0px 20px;
-      a {
+      @media screen and (max-width: $sm) {
+        @include width-percent;
+        float: left;
+        text-align: left;
+      }
+      > a {
         padding: 5px 0px 2px 0px;
         @include display(inline-block);
         font-size: 13px;
@@ -31,12 +68,34 @@
         @include line-height(1.8);
         text-align: center;
         cursor: pointer;
+        @media screen and (max-width: $sm) {
+          @include background-bg(#fff);
+        }
       }
       a:hover {
         @include text-decoration;
       }
     }
-    li:nth-of-type(2) {
+    .shop-by {
+      @include font-weight;
+      padding: 10px 15px;
+      color: $greyish-brown;
+      span {
+        float: right;
+        @include height-auto(17px);
+        cursor: pointer;
+      }
+    }
+    li.active {
+    > a {
+        border-bottom: solid 3px $rouge;
+        color: $rouge;
+      }
+      div[data-sub-menu] {
+        @include display(block);
+      }
+    }
+    > li:nth-of-type(2) {
       padding: 0px 20px 0px 5px;
     }
     //
@@ -45,21 +104,22 @@
       @include background-bg(#fff);
       @include width-percent;
       @include height-auto(350px);
+      @include display(none);
       left: 0px;
-      z-index: -1;
       box-shadow: 0 2px 4px 0 rgba(134, 134, 134, 0.5);
+      z-index: -1;
       .sub-menu-wrapper {
         padding: 0px 80px 0px 0px;
-        ul {
+        > ul {
           padding: 0px;
-          li {
+          > li {
             padding: 15px 25px;
             @include display(inline-block);
             @include width-percent(16.666%);
             float: left;
             text-align: left;
             @include height-auto(350px);
-            a {
+            > a {
               font-size: $font-size;
               color: $brownish-grey;
               @include font-weight(700);
@@ -82,21 +142,62 @@
                 }
               }
             }
-            ul {
-              @include width-percent;
+            // Nasted UL
+            > ul {
               float: left;
-              margin-bottom: 10px;
-              li {
+              @include width-percent;
+              padding: 0px;
+              list-style: none;
+              > li {
                 margin: 10px 0px;
-                a {
-                  color: $brownish-grey;
+                > a {
                   font-size: $font-size;
+                  color: $brownish-grey;
+                  @include display(block);
+                  > span {
+                    @include background-bg($rouge);
+                    @include position;
+                    padding: 0 3px 1px;
+                    font-size: $font-size-sm;
+                    color: #fff;
+                    margin-left: 3px;
+                    @include font-weight(700);
+                  }
+                  :before {
+                    @include position(absolute);
+                    content: '';
+                    @include width-percent(3px);
+                    @include height-auto(16px);
+                    top: 0;
+                    right: -3px;
+                    background-image: url('../img/flag.png');
+                    background-position: top left;
+                    background-repeat: no-repeat;
+                  }
+                }
+                :hover {
+                  color: $rouge;
+                  > span {
+                    color: #fff;
+                  }
                 }
               }
             }
+            .image_box {
+              @include height-auto;
+              a:nth-of-type(2) {
+                img {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+          :nth-child(even) {
+            @include background-bg($white2);
           }
         }
       }
     }
   }
 }
+//
