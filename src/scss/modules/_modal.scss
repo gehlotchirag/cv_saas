@@ -1,0 +1,61 @@
+#myModal .modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+#myModal .modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom:none;
+}
+#myModal .modal-body {
+    padding: 0 15px 15px;
+}
+#myModal .policies-close {
+	cursor:pointer;
+    float: right;
+    width: 25px;
+}
+#myModal .policies-nav {
+    margin-left: 8%;
+    font-weight: 700;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#myModal .policies-nav, #myModal .policies-tab-conent {
+    font-size:14px;
+    color: #4a4a4a;
+    font-family: Open Sans;
+}
+#myModal .policies-nav>li a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color:#666666;
+    margin-right: 2px;
+    line-height: 1.42857;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-size:14px;
+}
+#myModal .policies-nav.active, #myModal .policies-nav>li.active>a {
+    cursor: default;
+    background-color: rgba(238,238,238,0);
+    border-bottom: 3px solid #981937!important;
+    color: #981937!important;
+}
+
+
+

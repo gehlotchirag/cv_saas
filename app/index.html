@@ -7,10 +7,64 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="assets/css/style.min.css" rel="stylesheet">
 </head>
 <body>
 <!-- // Header Start -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+     <!-- Modal content-->
+         <div class="modal-content">
+            <div class="modal-header no-border custom-modal-header">
+                <div  class="policies-close"  data-dismiss="modal">X</div>
+            </div>
+            <div class="modal-body">
+
+                 <!-- Nav tabs -->
+                <ul class="nav nav-tabs policies-nav" role="tablist"  >
+                    <li role="presentation" class="active"><a href="#shippingPolicies" aria-controls="shippingPolicies" role="tab" data-toggle="tab">Shipping Policies</a></li>
+                    <li role="presentation"><a href="#returnPolicies" aria-controls="returnPolicies" role="tab" data-toggle="tab">Return Policies</a></li>
+                    <li role="presentation"><a href="#securePayments" aria-controls="securePayments" role="tab" data-toggle="tab">100% Secure Payments</a></li>
+                </ul>
+
+                 <!-- Tab panes -->
+                <div class="tab-content policies-tab-conent">
+                    <div role="tabpanel" class="tab-pane active" id="shippingPolicies">
+                        <div class="mart5"><b>Shipping Time</b></div>
+
+                        <p>Currently our average delivery time in India is around 4 days and outside of India is 18 days.</p>
+                        <div class="mart5"><b>Shipment Tracking:</b></div>
+                        <p>You will get an email and SMS with the tracking details as soon as the product is shipped. You can also track your order by logging into you Craftsvilla account.</p>
+                        <div class="mart5"><b>Shipping Locations:</b> </div>
+                        <p>We deliver to over 100 countries globally including USA, UK, Australia and Canada</p>
+                    </div>
+                    <div role="tabpanel" class="fade tab-pane" id="returnPolicies">
+                        <div class="mart5"><b>Return Time:</b></div>
+                        <p>We have a 100% Buyer protection policy wherein you can return the product for any reason whatsoever. You can ship it back to us within 7 days and get a full refund</p>
+                        <div class="mart5"><b>Return Process: </b></div>
+                        <p>Just email us your complaint with order number within 7 days of receipt of the product. You can also login to your account and raise a dispute from there. We will pickup up the product from your doorstep if the pincode is serviceable. In case we can’t pickup, our team will reply to you with an email, containing instructions and return shipping address to which you need to send back the product within 10 days.</p>
+                        <div class="mart5"><b>Refund: </b></div>
+                        <p>If you wish, we can offer you a redeemable voucher worth the refund amount for future purchases. Else we can also refund the entire amount back to your bank account without any deductions along with Rs. 100 for return shipping.</p>
+                    </div>
+                    <div role="tabpanel" class="fade tab-pane" id="securePayments">
+                        <div class="mart5"><b>Payment Modes:</b> </div>
+                        <p>Cash on Delivery</p>
+                        <p>Net Banking, Debit cards/ Credit Cards (Visa, MasterCard, American Express, Diners Club cards accepted)</p>
+                        <p>International Credit Cards</p>
+                        <div class="mart5"><b>Payment Details: </b></div>
+                        <p>Immediately after you make a purchase, an invoice with your payment details and a unique payment ID will be sent to you. In case of any issues, our customer care would be happy to help you.</p>
+                        <div class="mart5"><b>Payment Security:</b></div>
+                        <p>You pay through our secured Payment Gateway and all data is transferred through high level encryption technology. We guarantee your payments are 100% safe with us and the details are never shared with anyone during the payment process.</p>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal ends -->
 <header class="container-fluid nopadding">
     <nav id="top-nav" class="craftsvilla-international hidden-xs hidden-sm" role="navigation">
         <div class="container">
@@ -656,9 +710,78 @@
 <!-- // Header End -->
 
 <!-- // Content Start -->
-<div class="container-fluid nopadding content-container">
-    <div class="container">
+<div class="container-fluid nopadding">
+    <div class="container nopadding">
         <h1 class="text-center" style="min-height: 300px; padding-top: 100px;">CONTENT</h1>
+        <!-- // buyer protection Start -->
+        <div class="col-xs-12 col-sm-12 col-md-12 buyer-section hidden-sm hidden-xs" data-toggle="modal" data-target="#myModal">
+            <i class="icon cv-buyer buyer-protc"></i>
+            <span class="buyer-text">
+                <b>100%</b>
+                <span class="regular-text">Buyer Protection</span> |
+                <span class="secure-text">Secure Payments &amp; Easy Returns |
+                    <span class="learn-text">Learn More</span>
+                </span>
+            </span>
+        </div>
+        <!-- // buyer protection end -->
+
+        <!-- Carousel start -->
+        <div class="col-xs-12 col-sm-12 col-md-12 carousel-section" id="international">
+            <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+            <!-- Indicators -->
+                <div class="row vdivide hidden-sm hidden-xs carousel-indicators desktop-indicators">
+                    <a href="http://www.craftsvilla.com/cvfeeds/int-70-percent-off-on-womens-clothing-60002.html" class="col-xs-4 col-sm-4 nopadding">
+                        <div class="carousel-selectors" data-target="#bs-carousel" data-slide-to="0">
+                            <span class="carousel-text"> 70% OFF <br> DISCOUNT FEST </span>
+                        </div>
+                    </a>
+                    <a href="http://www.craftsvilla.com/cvfeeds/int-fast-selling-products-60006.html" class="col-xs-4 col-sm-4 nopadding active">
+                        <div class="carousel-selectors" data-target="#bs-carousel" data-slide-to="1">
+                            <span class="carousel-text">CRAFTSVILLA <br> BEST-SELLERS</span>
+                        </div>
+                    </a>
+                    <a href="http://www.craftsvilla.com/cvfeeds/int-craftsvilla-wishlist-collection-60007.html" class="col-xs-4 col-sm-4 nopadding">
+                        <div class="carousel-selectors" data-target="#bs-carousel" data-slide-to="2">
+                            <span class="carousel-text">CUSTOMER <br> FAVOURITES</span>
+                        </div>
+                    </a>
+                </div>
+                <ol class="carousel-indicators visible-sm visible-xs">
+                    <li data-target="#bs-carousel" data-slide-to="0" class=""></li>
+                    <li data-target="#bs-carousel" data-slide-to="1"></li>
+                    <li data-target="#bs-carousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item slides">
+                        <div class="slide-1">
+                            <a onclick="dataLayer.push({'event':'FeedClickEvent','eventName':'FeedClickEvent','FeedId':'60002','SectionName':'Banner','SectionPosition':'1','Position':'1'});" href="http://www.craftsvilla.com/cvfeeds/int-70-percent-off-on-womens-clothing-60002.html">
+                                <img src="http://assets1.craftsvilla.com/banner-craftsvilla/cvfeeds/1460475600_megadiscount70off1_productid_hero.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item slides active">
+                        <div class="slide-2">
+                            <a onclick="dataLayer.push({'event':'FeedClickEvent','eventName':'FeedClickEvent','FeedId':'60006','SectionName':'Banner','SectionPosition':'1','Position':'2'});" href="http://www.craftsvilla.com/cvfeeds/int-fast-selling-products-60006.html">
+                                <img src="http://assets1.craftsvilla.com/banner-craftsvilla/cvfeeds/1460475494_bestsellingproduct_productid_hero.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item slides">
+                        <div class="slide-3">
+                            <a onclick="dataLayer.push({'event':'FeedClickEvent','eventName':'FeedClickEvent','FeedId':'60007','SectionName':'Banner','SectionPosition':'1','Position':'3'});" href="http://www.craftsvilla.com/cvfeeds/int-craftsvilla-wishlist-collection-60007.html">
+                                <img src="http://assets1.craftsvilla.com/banner-craftsvilla/cvfeeds/1460475523_mostwishlisted_productid_hero.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <style type="text/css">.policies-nav > li{margin:0px;}</style>
+        </div>
+        <!-- Carousel end -->
+
     </div>
 </div>
 <!-- // Content End -->

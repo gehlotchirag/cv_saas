@@ -1,0 +1,35 @@
+@import '../modules/modal.scss';
+.buyer-section {
+	@include background-bg($white);
+    background-color: #fff;
+    padding-bottom:11px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    .buyer-protc{
+    	width: 31px;
+    	height: 31px;
+    	display: inline-block;
+    	top: 11px;
+    	position: relative;
+    }
+	.buyer-text {
+		font-family: Lato;
+ 		@include font-weight(700);
+    	font-size: 24px;
+    	line-height: .7;
+    	letter-spacing: .2px;
+    	color: $rouge;
+    	position: relative;
+    	top: 4px;
+    }
+    .secure-text {
+    	font-size: 14px;
+	    color:$grey;
+	    @include font-weight(400);
+	}
+	.learn-text{
+		color: $rouge;
+	}
+}
+
