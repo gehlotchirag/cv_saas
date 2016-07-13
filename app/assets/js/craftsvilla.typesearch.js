@@ -86,8 +86,7 @@ minLength: minimum length of input before an HTTP request
 			this.content = el.content;
 			if(this.type == "CATEGORY"){
 				$("#tsresponse").append('<li><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span>' + this.type + '</span></a></li>');
-			}
-			else if(this.type == "product"){
+			}else if(this.type == "product"){
 				$("#tsresponse").append('<li><img src="' + this.content.images + '"/><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span>' + this.type + '</span></a></li>');
 			}else if(this.type == "seller"){
 				$("#tsresponse").append('<li><img src="' + this.content.images + '"/><a href="' + this.content.url_path + '"><span>' + this.content.text + '</span><span>' + this.type + '</span></a></li>');
