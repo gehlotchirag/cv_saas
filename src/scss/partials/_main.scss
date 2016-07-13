@@ -1,9 +1,13 @@
 @import 'buyer_protection.scss';
 @import 'carousel.scss';
+@import '../modules/_fourgrid.scss';
 // Page Container Start
 [content-wrapper] {
   margin-top: 115px;
   @media screen and (max-width: $md) {
     margin-top: 59px;
   }
+}
+.section {
+  margin: 7.5px 0px;
 }

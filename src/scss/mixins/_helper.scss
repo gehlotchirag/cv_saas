@@ -12,7 +12,7 @@
 }
 // margin
 @mixin nomargin($zero:0px) {
-	margin: $zero;
+	margin: $zero $zero $zero $zero;
 }
 // background bg color
 @mixin background-bg($bgcolor: #f5f3e8) {

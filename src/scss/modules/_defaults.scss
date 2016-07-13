@@ -1,3 +1,13 @@
 .nopadding {
 	@include nopadding;
 }
+.nomargin {
+	@include nomargin;
+}
+.first-headding {
+	@include font-weight(700);
+	font-size: $font-size-md;
+	color: $greyish-brown;
+	letter-spacing: 1.3px;
+	margin: 7.5px 0px;
+}
