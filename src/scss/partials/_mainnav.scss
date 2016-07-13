@@ -65,11 +65,14 @@
 		@include nopadding;
 		float: right;
 		li {
-			@include display(inline-block);
+				@include display(inline-block);
 				float: left;
 				margin-left: 25px;
 				@media screen and (max-width: $sm) {
 					margin-left: 5px;
+				}
+				@media only screen and (min-width: $sm) and (max-width: $mdm) {
+					margin-left: 10px;
 				}
 			a {
 				@include text-color($rouge);
