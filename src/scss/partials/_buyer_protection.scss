@@ -6,30 +6,54 @@
     text-align: center;
     cursor: pointer;
     border: 1px solid #ebebeb;
+    @media screen and (max-width: $sm){
+        margin: 0;
+        padding: 7px;
+        line-height: .7;
+        background-color: $white;
+        color: $rouge;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: left;
+    }
     .buyer-protc{
     	width: 31px;
     	height: 31px;
     	display: inline-block;
     	top: 11px;
     	position: relative;
+         @media screen and (max-width: $sm){
+            top:0;
+         }
     }
 	.buyer-text {
-		font-family: Lato;
- 		@include font-weight(700);
+		@include font-weight(700);
     	font-size: 24px;
     	line-height: .7;
     	letter-spacing: .2px;
     	color: $rouge;
     	position: relative;
     	top: 4px;
+        @media screen and (max-width: $sm){
+            font-size:16px;
+            top: -10px;
+            @include font-weight(400);
+        }
     }
     .secure-text {
-    	font-size: 14px;
+    	font-size:  $font-size;
 	    color:$grey;
 	    @include font-weight(400);
 	}
 	.learn-text{
+        font-size: $font-size;
 		color: $rouge;
+        @media screen and (max-width: $sm){
+            position: relative;
+            top: -11px;
+            left: 61px;
+            @include font-weight(700);
+        }
 	}
 }
 
