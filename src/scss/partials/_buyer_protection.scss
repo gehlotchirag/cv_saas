@@ -49,9 +49,9 @@
         font-size: $font-size;
 		color: $rouge;
         @media screen and (max-width: $sm){
-            position: relative;
-            top: -11px;
-            left: 61px;
+            position: absolute;
+            top: 18px;
+            right: 15px;
             @include font-weight(700);
         }
 	}
