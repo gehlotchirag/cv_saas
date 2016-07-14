@@ -27,88 +27,6 @@
     height: 18px;
 }
 
-
-ul[role=filter]{
-	list-style-type: none;
-
-	>li{	
-
-		h5{
-			@include font-face($font-family-lato);
-	    	@include text-color($greyish-brown);
-	    	@include font-weight($fontweight:700);
-	    	@include nomargin();
-	    	@include display(block);
-	    	@include width-percent($w:100%);
-	    	@include padding-top(10px);
-	    	@include padding-right(15px);
-	    	@include padding-bottom(10px);
-	    	@include padding-left(10px);
-	    	font-size: 14px;
-	    	letter-spacing: .3px;
-	    	float: left;
-	    	cursor: pointer;
-
-	    	span{
-
-	    	}
-
-	    	>span.arrow{
-				float: right;
-			    margin-left: 10px;
-			    width: 15px;
-			    height: 22px;
-			    -ms-transform: rotate(180deg);
-			    -webkit-transform: rotate(180deg);
-			    transform: rotate(180deg);
-			    margin-top: -2px;
-			}
-		}
-
-		>.sub-menu-parent{
-			>.menu-search{
-				@include display(none);
-				float: left;
-				padding: 0 15px 9px;
-				>ul {
-				    overflow-y: hidden;
-				    max-height: 152px;
-				    padding-top: 0px;
-				    padding-right: 0px;
-				    padding-bottom: 0px;
-				    padding-left: 0px;
-				}
-			}
-		}
-	}
-
-	>li.active{
-		h5{
-		    padding-top: 10px;
-		    padding-right: 15px;
-		    padding-bottom: 5px;
-		    padding-left: 15px;
-		
-		    >span.arrow{
-				float: right;
-			    margin-left: 10px;
-			    width: 15px;
-			    height: 22px;
-			    -ms-transform: rotate(180deg);
-			    -webkit-transform: rotate(180deg);
-			    transform: rotate(180deg);
-			    margin-top: -2px;
-			}
-		}
-
-		>.sub-menu-parent{
-			>.menu-search{
-				@include display(block);
-			}
-		}
-	}
-}
-
 .sub-menu-parent{
 	padding: 0;
 	background: 0 0;
@@ -116,10 +34,20 @@ ul[role=filter]{
 
 .menu-search{
     padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    background: 0 0;
+    padding-right: 15px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+
+    .search-category{
+		width: 100%;
+	    border-radius: 2px;
+	    background-color: #fff;
+	    box-shadow: 0 1px 0 0 rgba(239,239,239,.5);
+	    border: 1px solid #e0e0e0;
+	    padding: 5px;
+	    height: 35px;
+	    margin: 5px 0 8px;
+	}
 
 	input{
 		font-family: Lato;
@@ -128,14 +56,11 @@ ul[role=filter]{
 	    line-height: 1.75;
 	    color: $grey4;
 	}
-
-	>.search-category{
-		width: 100%;
-	    border-radius: 2px;
-	    box-shadow: 0 1px 0 0 rgba(239,239,239,.5);
-	    border: 1px solid #e0e0e0;
-	    padding: 5px;
-	    height: 35px;
-	    margin: 5px 0 8px;
-	}
 }
+
+#categorylist, #color, #discount, #price {
+    float: left;
+    width: 100%;
+}
+
+@import 'category_page_filters_ul.scss';
