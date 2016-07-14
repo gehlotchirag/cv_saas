@@ -6,6 +6,17 @@
 	@include border-left(solid);
 }
 
+a{
+	@include text-decoration(none);
+	&:link, &:visited{
+		@include text-color($category-link-grey);
+	}
+
+	&:hover{
+		@include text-color($category-link-grey-hover);
+	}
+}
+
 .filter-wrapper{
 	@include nopadding();
 	@include border-top(solid, $white3, 1px);
@@ -32,13 +43,58 @@
 	background: 0 0;
 }
 
+ul.sub-menu{
+	>li{
+		float: left;
+    	width: 100%;
+    	margin-bottom: 5px;
+		>label{
+			margin: 0;
+			display: inherit;
+
+			>label{
+				border: 1px solid #ebebeb;
+			    float: left;
+			    margin-right: 10px;
+			    width: 22px;
+			    height: 22px;
+			    border-radius: 50%;
+			    background: #f8f8f8;
+			}
+
+			>span{
+				cursor: pointer;
+			    font-weight: 400;
+			    font-size: 12px;
+			    color: #727272;
+			    letter-spacing: .2px;
+			    line-height: 1.8;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			}
+
+			>input[type=checkbox] {
+    			display: none;
+    		}	
+		}
+	}
+}
+
 .menu-search{
     padding-top: 0px;
     padding-right: 15px;
     padding-bottom: 9px;
     padding-left: 15px;
 
-    .search-category{
+    input{
+		font-family: Lato;
+	    font-size: 12px;
+	    font-weight: 400;
+	    line-height: 1.75;
+	    color: $grey4;
+	}
+
+    .search_category{
 		width: 100%;
 	    border-radius: 2px;
 	    background-color: #fff;
@@ -48,19 +104,68 @@
 	    height: 35px;
 	    margin: 5px 0 8px;
 	}
+}
 
-	input{
-		font-family: Lato;
-	    font-size: 12px;
-	    font-weight: 400;
-	    line-height: 1.75;
-	    color: $grey4;
+.checkbox-common{
+	.menu-search{
+		>ul.sub-menu {
+			>li {
+				>label {
+					>label {
+					    width: 15px;
+					    height: 15px;
+					    border: 1px solid #ebebeb;
+					    border-radius: 0;
+					    margin-top: 4px;
+					    background: #f8f8f8;
+					}
+				}
+			}
+		}
 	}
 }
+
+
+.sub-menu-color {
+	li {
+	    display: inline;
+	    width: 30px;
+	    height: 30px;
+	    float: left;
+	    margin: 0 9px 9px 0;
+
+	    label {
+		    display: block;
+		    height: 100%;
+		    text-align: center;
+		    cursor: pointer;
+		    margin: 0;
+		    border-radius: 2px;
+		}
+	}
+}
+
 
 #categorylist, #color, #discount, #price {
     float: left;
     width: 100%;
+    li{
+    	input[type=checkbox] {
+		    margin: 0;
+		    float: none;
+		}
+	}
+
+    a{
+		@include text-decoration(none);
+		&:link, &:visited{
+			@include text-color($category-link-grey);
+		}
+
+		&:hover{
+			@include text-color($category-link-grey-hover);
+		}
+	}
 }
 
 @import 'category_page_filters_ul.scss';
