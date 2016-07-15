@@ -5,12 +5,86 @@ $md: 1023px;
 $mdm: 1120px;
 $lg: 1280px;
 
+///////////////////////////////////////////////////////////
+
+///               /////////////////////////////////////////
+// Basic Colours  /////////////////////////////////////////
+// 
+// black100 - Black 100% opacity
+// black87 - Black 87%
+// black54 - Black 54%
+// black38 - Black 38%
+// black12 - Black 12% opacity
+// and so on...
+
+$black100: #000000;
+$black87: lighten($black100,13%); //
+$black54: lighten($black100,46%); //
+$black38: lighten($black100,62%); //
+$black12: lighten($black100,88%); //
+
+$white100: #FFFFFF;
+$white87: darken($white100,13%); //
+$white54: darken($white100,46%); //
+$white38: darken($white100,62%); //
+$white12: darken($white100,88%); //
+
+$cv_red: #981937;
+
+///////////////////////////////////////////////////////////
+
+///                    /////////////////////////////////////////
+// Base Theme Colours  /////////////////////////////////////////
+//                     /////////////////////////////////////////
+
+$cv_primary: $cv_red;
+$cv_accent_light: $white100;
+$cv_accent_dark: $black87;
+
+$cv_text_dark: $black100;
+$cv_text_dark_0: $black87;
+$cv_text_dark_1: $black54;
+$cv_text_dark_2: $black38;
+$cv_text_dark_3: $black12;
+
+$cv_text_light: $white100;
+$cv_text_light_0: $white87;
+$cv_text_light_1: $white54;
+$cv_text_light_2: $white38;
+$cv_text_light_3: $white12;
+
+$cv_bg_primary: $cv_primary;
+$cv_bg_wht_0: $white100;
+$cv_bg_wht_1: $white87;
+$cv_bg_blk_0: $black100;
+$cv_bg_blk_1: $black87;
+
+$cv_default_background: none;
+$cv_header_background: #f5f3e8;
+$cv_megamenu_nav_background: #eee4d1;
+$cv_megamenu_content_background: $white100;
+$cv_carousel_background: none;
+$cv_grid_background: none;
+$cv_footer_background: #f5f3e8;
+
+///////////////////////////////////////////////////////////
+
+@import 'vars_mobile.scss';
+@import 'vars_header.scss';
+@import 'vars_megamenu.scss';
+@import 'vars_carousel.scss';
+@import 'vars_gridcontent.scss';
+@import 'vars_footer.scss';
+
+///////////////////////////////////////////////////////////
+
+
 // BG Color
 $white: #ffffff !default;
 $beige: #f5f3e8 !default;
 $beige-two: #eee4d1 !default;
-$white2: #fbfbfb;
-$white3: #f9f9f9;
+$white2: #fbfbfb;	//replace with cv_bg_wht_1
+$white3: #f9f9f9;	//replace with cv_bg_wht_1
 $grey2: #dedede;
 $grey3: #ededed;
 $grey4: #949494;

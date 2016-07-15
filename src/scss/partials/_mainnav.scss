@@ -1,19 +1,22 @@
 .craftsvilla-navbar {
-	@include background-bg;
+	@include background-bg($header_background_default);
 
-.mobile-menu {
-	float: left;
-	width: 30px;
-	padding: 20px 0px;
-	span {
+	.mobile-menu {
 		float: left;
-		height: 3px;
-		background: $rouge;
-		@include width-percent(75%);
-		margin-bottom: 5px;
-	}
-	span:last-child {
-		margin-bottom: 0px;
+		width: 30px;
+		padding: 20px 0px;
+		
+		span {
+			float: left;
+			height: 3px;
+			@include background-bg($mobile_header_background);
+			@include width-percent(75%);
+			margin-bottom: 5px;
+			
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
 	}
 }
 .logo-container {
@@ -36,7 +39,7 @@
 .currency-container {
 	.dropdown {
 		span {
-			@include text-color($rouge);
+			@include text-color($header_currency_text_default);
 			font-size: 16px;
 		}
 	}
@@ -75,7 +78,7 @@
 					margin-left: 10px;
 				}
 			a {
-				@include text-color($rouge);
+				@include text-color($header_authentication_text);
 				font-size: 16px;
 				float: left;
 				padding: 4.5px 0px;
@@ -96,8 +99,8 @@
 					float: right;
 					@include line-height(14px);
 					text-align: center;
-					background-color: $rouge;
-					color: #fff;
+					background-color: $header_authentication_text;
+					color: $header_authentication_bg;
 					font-size: 12px;
 					margin-left: 5px;
 					@media screen and (max-width: $sm) {
@@ -106,9 +109,13 @@
 						right: -6px;
 					}
 				}
+
+				&:hover {
+					@include text-decoration(none);
+				}
 			}
 			[data-cart] {
-				border: solid 1px #e4d2be;
+				border: solid 1px $header_cart_border;
 				padding-left: 4.5px;
 				padding-right: 4.5px;
 				border-radius: 3px;
@@ -117,11 +124,7 @@
 					border: none;
 				}
 			}
-			a:hover {
-				@include text-decoration;
-			}
 		}
 	}
 }
 
-}

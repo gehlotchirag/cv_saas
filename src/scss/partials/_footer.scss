@@ -1,7 +1,7 @@
 .footer-container {
-	@include background-bg;
+	@include background-bg($footer_background_default);
 	@include font-face;
-	@include border-top(solid, $rouge, 2px);
+	@include border-top(solid, $cv_primary, 2px);
 	padding-bottom: 50px;
 }
 
@@ -16,13 +16,17 @@
 		font-size: 14px;
 		line-height: 1.4;
 		letter-spacing: 0.2px;
-		color: $grey;
+		color: $footer_text_default;
 		a {
 			@include text-decoration(none);
-			color: $grey;
+			color: $footer_link_default;
 			cursor: pointer;
 			line-height: 1.7;
 			letter-spacing: .2px;
+
+			&:hover{
+				color: $footer_link_hover;
+			}
 		}
 	}
 
@@ -30,15 +34,10 @@
 		font-size: 16px;
 		line-height: 1.4;
 		letter-spacing: 0.9px;
-		color: $greyish-brown;
+		color: $footer_text_primary;
 		margin-top: 20px;
 		margin-bottom: 10px;
 		border: 0px solid red;
 		text-transform: uppercase;
-	}
-
-	li a:hover {
-		@include text-decoration(none);
-		color: $rouge;
 	}
 }
