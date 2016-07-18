@@ -1,88 +1,87 @@
-.carousel-section{
-    float:left;
-    @include width-percent(100%);
-    margin:30px 0 0 0;
-    .fade-carousel {
-        position: relative;
-        height: auto;
-        .slides {
-            img {
-                 @include width-percent(100%);
-                height: auto;
-            }
-        }
-    }
-    .carousel {
-        margin: 10px 0 0;
-    }
-    .row.vdivide {
-        margin: 0;
-
-        [class*=col-]:not(:last-child):after {
-            background: $very-light-grey;
-            width: 1px;
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-        }
-    }
-    .carousel-indicators {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        z-index: 15;
-         @include width-percent(60%);
-        padding-left: 0;
-        margin-left: -30%;
-        text-align: center;
-        list-style: none;
-        >li {
-            margin: 0 2px;
-            background-color: $vivid-orange;
-            border-color: $vivid-orange;
-            opacity: .7;
-        }
-        .carousel-selectors {
-            text-align: center;
-            background: $white;
-            padding: 14px 0 8px;
-            cursor: pointer;
-            .carousel-text {
-                font-size: $font-size;
-                @include font-weight;
-                line-height: 1.5;
-                color: $dark-grey;
-            }
-        }
-    }
-    .desktop-indicators {
-        bottom: -64px;
-        position: absolute;
-        left: 0;
-         @include width-percent(100%);
-         >.active {
-            @include width-percent(33.333%);
-            text-decoration:none;
-            border-bottom: 3px solid $rouge !important;
-            background: 0 0;
-            height: auto;
-            margin: 0;
-        }
-        a, a:hover{
-            color:$very-dark-grey;
-            text-decoration:none;
-        }
-    }
-
-    .carousel-inner {
-        position: relative;
-        overflow: hidden;
+.carousel-section {
+  float: left;
+  @include width-percent(100%);
+  margin: 30px 0 63px;
+  @media screen and (max-width: $sm) {
+    margin: 0px;
+  }
+  .fade-carousel {
+    position: relative;
+    height: auto;
+    .slides {
+      img {
         @include width-percent(100%);
+        height: auto;
+      }
     }
-
-
+  }
+  .carousel {
+    margin: 10px 0 0;
+  }
+  .row.vdivide {
+    margin: 0;
+    [class*=col-]:not(:last-child):after {
+      background: $very-light-grey;
+      width: 1px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    @include width-percent(60%);
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    > li {
+      margin: 0 2px;
+      background-color: $vivid-orange;
+      border-color: $vivid-orange;
+      opacity: 0.7;
+    }
+    .carousel-selectors {
+      text-align: center;
+      background: $white;
+      padding: 14px 0 8px;
+      cursor: pointer;
+      .carousel-text {
+        font-size: $font-size;
+        @include font-weight;
+        line-height: 1.5;
+        color: $dark-grey;
+      }
+    }
+  }
+  .desktop-indicators {
+    bottom: -64px;
+    position: absolute;
+    left: 0;
+    @include width-percent(100%);
+    > .active {
+      @include width-percent(33.333%);
+      text-decoration: none;
+      border-bottom: 3px solid $rouge !important;
+      background: 0 0;
+      height: auto;
+      margin: 0;
+    }
+    a,
+    a:hover {
+      color: $very-dark-grey;
+      text-decoration: none;
+    }
+  }
+  .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    @include width-percent(100%);
+  }
 }
-
