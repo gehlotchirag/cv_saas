@@ -1,6 +1,6 @@
 .filter-action-container{
-  border: solid 1px red;
   @include nopadding;
+  margin-bottom: 15px;
   > ul {
     padding: 0px;
     list-style: none;
@@ -9,9 +9,22 @@
     @include width-percent;
     > li {
       float: left;
-      > a {
-
+      background: $breadcrom-filter-bg;
+      margin-right: 5px;
+      border: solid 1px $breadcrom-filter-border;
+      padding: 2px 5px;
+      font-size: $font-size-sm;
+      cursor: pointer;
+      > span.action-delete {
+        @include width-percent(13px);
+        @include height-auto(13px);
+        margin: 2px 0px 0px 5px;
       }
+    }
+    .clear-all {
+      background-color: inherit;
+      border: none;
+      color: $breadcrom-filter-text-color-secoundary;
     }
   }
 }

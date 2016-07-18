@@ -1,0 +1,47 @@
+.page-heading {
+  margin-bottom: 15px;
+  h1 {
+    @include nomargin;
+    font-size: 25px;
+    color: $product-name-text-color-primary;
+    letter-spacing: 0.4px;
+    span {
+      position: relative;
+    }
+    span#searchstring::before {
+      content: '\2018';
+    }
+    span#searchstring::after {
+      content: '\2019';
+    }
+    span:nth-of-type(2) {
+      margin: 0px 10px;
+    }
+    span:nth-of-type(2)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 6px;
+      @include width-percent(1px);
+      @include height-auto(20px);
+      background: $border-right-color;
+    }
+    span:nth-of-type(3) {
+      font-size: $font-size;
+      color: $product-name-text-color-secoundry;
+    }
+  }
+  .Product_Info {
+    h2 {
+      @include nomargin;
+      font-size: $font-size-sm;
+      color: $product-name-text-color-secoundry;
+      @include line-height(27px);
+      span {
+        @include font-weight(700);
+        color: $product-name-text-color-primary;
+      }
+    }
+  }
+}
+//
