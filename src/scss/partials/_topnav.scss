@@ -1,18 +1,20 @@
 .craftsvilla-international {
-	@include background-bg;
-	color: $brownish-grey;
+	@include background-bg($header_background_default);
+	color: $header_text_default;
 	@include height-auto($h:24px);
 	@include font-weight;
 	@include line-height($lheight:23px);
+
+	a {
+		color:$header_link_default;
+
+		&:hover{
+			color:$header_link_hover;
+			@include text-decoration(none);
+		}
+	}
 }
-.craftsvilla-international a {
-	color:$brownish-grey;
-	@include text-decoration;
-}
-.craftsvilla-international a:hover {
-	color:$rouge;
-	@include text-decoration;
-}
+
 .icon-call, .icon-download {
 	@include width-percent($w: 12px);
 	@include height-auto($h: 12px);

@@ -1,53 +1,53 @@
-// padding
+// padding ----------------------------------------
 @mixin nopadding($zero:0px) {
 	padding: $zero !important;
 }
-// padding right
+// padding right------------------------------------
 @mixin padding-right($pr:auto) {
 	padding-right: $pr;
 }
-// padding left
+// padding left----------------------------------
 @mixin padding-left($pl:auto) {
 	padding-left: $pl;
 }
 
-// padding top
+// padding top----------------------------------------
 @mixin padding-top($pt:auto) {
 	padding-top: $pt;
 }
 
-// padding bottom
+// padding bottom------------------------------------
 @mixin padding-bottom($pb:auto) {
 	padding-bottom: $pb;
 }
 
 
-// margin
+// margin---------------------------------------------
 @mixin nomargin($zero:0px) {
 	margin: $zero $zero $zero $zero;
 }
-// margin top
+// margin top------------------------------------------
 @mixin margin-top($mt:0px) {
 	margin-top: $mt;
 }
 
-// margin right
+// margin right-----------------------------------------
 @mixin margin-right($mr:0px) {
 	margin-right: $mr;
 }
 
-// margin bottom
+// margin bottom-------------------------------------
 @mixin margin-bottom($mb:0px) {
 	margin-bottom: $mb;
 }
 
-// margin left
+// margin left---------------------------------------
 @mixin margin-left($ml:0px) {
 	margin-left: $ml;
 }
 
-// background bg color
-@mixin background-bg($bgcolor: #f5f3e8) {
+// background bg color--------------------------------
+@mixin background-bg($bgcolor: $cv_default_background) {
 	background-color: $bgcolor;
 }
 
