@@ -35,7 +35,7 @@
     position: absolute;
     bottom: 10px;
     left: 50%;
-    z-index: 15;
+    z-index: 0;
     @include width-percent(60%);
     padding-left: 0;
     margin-left: -30%;
