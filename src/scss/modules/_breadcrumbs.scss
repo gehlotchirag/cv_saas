@@ -1,0 +1,32 @@
+[data-breadcrumb] {
+  margin: 0px 0px 15px 0px;
+  > ul {
+    @include background-bg(inherit);
+    margin: -5px 0px 0px 0px;
+    @media screen and (max-width: $sm) {
+      @include nomargin;
+    }
+    border-radius: 0px;
+    list-style: none;
+    > li {
+      > a {
+        font-size: 12px;
+        color: $breadC;
+      }
+      :hover {
+        color: $rouge;
+        @include text-decoration;
+      }
+      + li:before {
+        content: '>';
+        color: $breadC;
+      }
+    }
+    .active {
+      span {
+        font-weight: 700;
+        color: $greyish-brown;
+      }
+    }
+  }
+}
