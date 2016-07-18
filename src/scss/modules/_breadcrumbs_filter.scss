@@ -1,0 +1,17 @@
+.filter-action-container{
+  border: solid 1px red;
+  @include nopadding;
+  > ul {
+    padding: 0px;
+    list-style: none;
+    float: left;
+    margin: 0px;
+    @include width-percent;
+    > li {
+      float: left;
+      > a {
+
+      }
+    }
+  }
+}

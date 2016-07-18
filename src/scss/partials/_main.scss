@@ -1,13 +1,30 @@
 @import 'buyer_protection.scss';
 @import 'carousel.scss';
 @import '../modules/_fourgrid.scss';
+// breadcrumbs
+@import '../modules/_breadcrumbs.scss';
+@import '../modules/_breadcrumbs_filter.scss';
+// sortby
+@import '../modules/_sortby.scss';
+// Product Grid
+@import '../modules/_sortby.scss';
+
 // Page Container Start
+.section {
+  margin: 7.5px 0px;
+}
 [content-wrapper] {
   margin-top: 115px;
   @media screen and (max-width: $md) {
     margin-top: 59px;
   }
 }
-.section {
-  margin: 7.5px 0px;
+
+// data-content-wrapper
+[data-content-wrapper] {
+  padding: 15px 0px 15px 30px !important;
+  border: solid 1px red;
+  @media screen and (max-width: $md) {
+    padding: 0px !important;
+  }
 }
