@@ -1,3 +1,6 @@
+// Login model
+@import '../modules/_loginModel.scss';
+
 .craftsvilla-navbar {
 	@include background-bg($header_background_default);
 
@@ -5,14 +8,14 @@
 		float: left;
 		width: 30px;
 		padding: 20px 0px;
-		
+
 		span {
 			float: left;
 			height: 3px;
 			@include background-bg($mobile_header_background);
 			@include width-percent(75%);
 			margin-bottom: 5px;
-			
+
 			&:last-child {
 				margin-bottom: 0px;
 			}
@@ -110,7 +113,7 @@
 					}
 				}
 
-				&:hover {
+				&:hover, &:focus {
 					@include text-decoration(none);
 				}
 			}
@@ -127,4 +130,3 @@
 		}
 	}
 }
-

@@ -9,7 +9,7 @@ $lg: 1280px;
 
 ///               /////////////////////////////////////////
 // Basic Colours  /////////////////////////////////////////
-// 
+//
 // black100 - Black 100% opacity
 // black87 - Black 87%
 // black54 - Black 54%
@@ -67,6 +67,7 @@ $cv_carousel_background: none;
 $cv_grid_background: none;
 $cv_footer_background: #f5f3e8;
 $cv_filter_background: $white100;
+$cv_modal_background: $white100;
 
 //---------------------------------------------
 
@@ -77,6 +78,7 @@ $cv_filter_background: $white100;
 @import 'vars_gridcontent.scss';
 @import 'vars_footer.scss';
 @import 'vars_filters.scss';
+@import 'vars_modal.scss';
 
 ///////////////////////////////////////////////////////////
 
@@ -131,7 +133,8 @@ $font-size-ex: 10px !default;
 //
 //##
 $font-family-lato:  'Lato', sans-serif !default;
-$font-family-roboto:  "Roboto", Helvetica, Arial, sans-serif !default;
+$font-family-roboto:  'Roboto', Helvetica, Arial, sans-serif !default;
+$font-family-roboto-slab:  'Roboto Slab', Helvetica, Arial, sans-serif !default;
 
 //== Header
 //

@@ -1,0 +1,33 @@
+#loginModel {
+  .modal-dialog {
+    max-width: 450px;
+    .modal-content {
+      .nav-pills {
+        margin-bottom: 15px;
+        li.active {
+          a {
+            background-color: $modal_tab_button_bg;
+          }
+        }
+      }
+      button {
+        @include font-face($font-family-roboto-slab);
+        @include font-weight(700);
+        @include line-height(35px);
+        background-color: $modal_button_bg;
+        border: 0px;
+        color: $modal_button_text_dfault;
+        border-radius: 4px;
+      }
+      p {
+        a {
+          @include text-decoration();
+          color: $modal_link_default;
+        }
+        :hover {
+          color: $modal_link_hover;
+        }
+      }
+    }
+  }
+}
