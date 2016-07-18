@@ -7,21 +7,26 @@
 
 	a {
 		color:$header_link_default;
-
+		position: relative;
 		&:hover{
 			color:$header_link_hover;
 			@include text-decoration(none);
 		}
 	}
 }
-
+.icon-call {
+	margin-top: 5px;
+	margin-right: 3px;
+}
+.icon-download {
+	position: absolute;
+	left: -15px;
+	top: 1px;
+}
 .icon-call, .icon-download {
-	@include width-percent($w: 12px);
-	@include height-auto($h: 12px);
-	@include border-top;
-	@include border-right;
-	@include border-bottom;
-	@include border-left;
+	@include width-percent($w: 16px);
+	@include height-auto($h: 17px);
 	@include display($dis: inline-flex);
 	@include display($dis: -webkit-inline-flex);
+	border: none;
 }

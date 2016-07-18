@@ -1,91 +1,81 @@
-ul[role=filter]{
+ul[role=filter] {
 	list-style-type: none;
-
-	>li{	
-		h5{
+	> li {
+		h5 {
 			@include font-face($font-family-lato);
-	    	@include text-color($greyish-brown);
-	    	@include font-weight($fontweight:700);
-	    	@include nomargin();
-	    	@include display(block);
-	    	@include width-percent($w:100%);
-	    	@include padding-top(10px);
-	    	@include padding-right(15px);
-	    	@include padding-bottom(10px);
-	    	@include padding-left(15px);
-	    	font-size: 14px;
-	    	letter-spacing: .3px;
-	    	float: left;
-	    	cursor: pointer;
-
-	    	>span{
-	    		display: block;
-    			line-height: 1.2;
-	    	}
-
-	    	>span.arrow{
-				float: right;
-			    margin-left: 10px;
-			    width: 15px;
-			    height: 22px;
-			    -ms-transform: rotate(180deg);
-			    -webkit-transform: rotate(180deg);
-			    transform: rotate(180deg);
-			    margin-top: -2px;
+			@include text-color($greyish-brown);
+			@include font-weight($fontweight:700);
+			@include nomargin();
+			@include display(block);
+			@include width-percent($w:100%);
+			@include padding-top(10px);
+			@include padding-right(15px);
+			@include padding-bottom(10px);
+			@include padding-left(15px);
+			font-size: 14px;
+			letter-spacing: 0.3px;
+			float: left;
+			cursor: pointer;
+			> span {
+				display: block;
+				line-height: 1.2;
 			}
-			>span.cat-title{
+			> span.arrow {
+				float: right;
+				margin-left: 10px;
+				width: 15px;
+				height: 22px;
+				-ms-transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+				margin-top: -2px;
+			}
+			> span.cat-title {
 				margin-top: 2px;
-    			width: 80%;
+				width: 80%;
 			}
-			>span.reset_clear{
+			> span.reset_clear {
 				float: right;
-    			margin-top: 1px;
+				margin-top: 1px;
 			}
-			>span.delete{
+			> span.delete {
 				@include display(none);
 				float: right;
 			}
 		}
-
-		>.sub-menu-parent{
+		> .sub-menu-parent {
 			padding: 0;
 			width: 100%;
-			>.menu-search{
+			> .menu-search {
 				@include display(none);
 				float: left;
-				>ul {
-				    overflow-y: hidden;
-				    max-height: 152px;
-				    padding-top: 0px;
-				    padding-right: 0px;
-				    padding-bottom: 0px;
-				    padding-left: 0px;
+				> ul {
+					overflow-y: hidden;
+					max-height: 152px;
+					padding: 0;
 				}
 			}
 		}
 	}
-
-	>li.active{
-		h5{
-		    @include padding-top(10px);
-	    	@include padding-right(15px);
-	    	@include padding-bottom(5px);
-	    	@include padding-left(15px);
-		
-		    >span.arrow{
+	> li.active {
+		h5 {
+			@include padding-top(10px);
+			@include padding-right(15px);
+			@include padding-bottom(5px);
+			@include padding-left(15px);
+			> span.arrow {
 				float: right;
-			    margin-left: 10px;
-			    width: 15px;
-			    height: 22px;
-			    -ms-transform: rotate(180deg);
-			    -webkit-transform: rotate(180deg);
-			    transform: rotate(180deg);
-			    margin-top: -2px;
+				margin-left: 10px;
+				width: 15px;
+				height: 22px;
+				-ms-transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+				margin-top: -2px;
 			}
 		}
-
-		>.sub-menu-parent{
-			>.menu-search{
+		> .sub-menu-parent {
+			> .menu-search {
 				@include display(block);
 			}
 		}
