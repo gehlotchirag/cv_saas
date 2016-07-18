@@ -5,7 +5,7 @@
     margin: 7.5px 0px;
     padding: 0px 7.5px;
     > .feed {
-      background: $grey2;
+      background: $grid_background_default;
       padding: 0px;
       > a {
         @include display;
