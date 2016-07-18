@@ -1,5 +1,5 @@
 #sidebar{
-	@include background-bg($white);
+	@include background-bg($filter_background_default);
 	@include border-top(solid);
 	@include border-right(solid);
 	@include border-bottom(solid);
@@ -9,21 +9,21 @@
 a{
 	@include text-decoration(none);
 	&:link, &:visited{
-		@include text-color($category-link-grey);
+		@include text-color($filter_link_default);
 	}
 
 	&:hover{
-		@include text-color($category-link-grey-hover);
+		@include text-color($filter_link_hover);
 	}
 }
 
 .filter-wrapper{
 	@include nopadding();
-	@include border-top(solid, $white3, 1px);
+	@include border-top(solid, $filter_wrapper_border, 1px);
 }
 
 .f-heading{
-	@include text-color($greyish-brown);
+	@include text-color($filter_text_primary);
     @include margin-top(13px);
     @include margin-right(0);
     @include margin-bottom(10px);
@@ -53,20 +53,20 @@ ul.sub-menu{
 			display: inherit;
 
 			>label{
-				border: 1px solid #ebebeb;
+				border: 1px solid $filter_submenu_label_border;
 			    float: left;
 			    margin-right: 10px;
 			    width: 22px;
 			    height: 22px;
 			    border-radius: 50%;
-			    background: #f8f8f8;
+			    background: $filter_submenu_label_bg;
 			}
 
 			>span{
 				cursor: pointer;
 			    font-weight: 400;
 			    font-size: 12px;
-			    color: #727272;
+			    color: $filter_submenu_text_default;
 			    letter-spacing: .2px;
 			    line-height: 1.8;
 			    overflow: hidden;
@@ -91,15 +91,15 @@ ul.sub-menu{
 	    font-size: 12px;
 	    font-weight: 400;
 	    line-height: 1.75;
-	    color: $grey4;
+	    color: $filter_menusearch_text_default;
 	}
 
     .search_category{
 		width: 100%;
 	    border-radius: 2px;
-	    background-color: #fff;
+	    background-color: $filter_menusearch_cat_bg;
 	    box-shadow: 0 1px 0 0 rgba(239,239,239,.5);
-	    border: 1px solid #e0e0e0;
+	    border: 1px solid $filter_menusearch_cat_border;
 	    padding: 5px;
 	    height: 35px;
 	    margin: 5px 0 8px;
@@ -112,19 +112,23 @@ ul.sub-menu{
 			>li {
 				>label {
 					>label {
+						display: inherit;
 					    width: 15px;
 					    height: 15px;
-					    border: 1px solid #ebebeb;
+					    border: 1px solid $filter_menusearch_check_border;
 					    border-radius: 0;
 					    margin-top: 4px;
-					    background: #f8f8f8;
+					    background: $filter_menusearch_check_bg;
+					}
+
+					>input[type=checkbox]:checked+label{
+
 					}
 				}
 			}
 		}
 	}
 }
-
 
 .sub-menu-color {
 	li {
@@ -141,7 +145,15 @@ ul.sub-menu{
 		    cursor: pointer;
 		    margin: 0;
 		    border-radius: 2px;
+
+		    input[type=checkbox] {
+			    display: none;
+			}
 		}
+	}
+
+	span{
+		display: none;
 	}
 }
 
@@ -159,13 +171,14 @@ ul.sub-menu{
     a{
 		@include text-decoration(none);
 		&:link, &:visited{
-			@include text-color($category-link-grey);
+			text-color: $filter_link_default;
 		}
 
 		&:hover{
-			@include text-color($category-link-grey-hover);
+			text-color: $filter_link_hover;
 		}
 	}
 }
 
 @import 'category_page_filters_ul.scss';
+@import 'category_page_filters_colors.scss';

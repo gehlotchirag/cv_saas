@@ -66,8 +66,9 @@ $cv_megamenu_content_background: $white100;
 $cv_carousel_background: none;
 $cv_grid_background: none;
 $cv_footer_background: #f5f3e8;
+$cv_filter_background: $white100;
 
-///////////////////////////////////////////////////////////
+//---------------------------------------------
 
 @import 'vars_mobile.scss';
 @import 'vars_header.scss';
@@ -75,6 +76,7 @@ $cv_footer_background: #f5f3e8;
 @import 'vars_carousel.scss';
 @import 'vars_gridcontent.scss';
 @import 'vars_footer.scss';
+@import 'vars_filters.scss';
 
 ///////////////////////////////////////////////////////////
 
@@ -96,8 +98,6 @@ $brownish-grey: #626262 !default;
 $greyish-brown: #4c4c4c !default;
 $rouge: #981937 !default;
 $grey: #888888 !default;
-$category-link-grey: #666666; 
-$category-link-grey-hover: #333333; 
 
 // color use in carousel
 
