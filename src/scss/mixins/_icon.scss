@@ -20,58 +20,101 @@
 }
 
 
-//========================================
+//-----------------------------------------
 SOCIAL ICONS ROUND LOGO
-//========================================
+//-----------------------------------------
 
-icon-fb-round{
+.icon-fb-round{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
 	background-position: -162px -7px;
 }
 
 .icon-tw-round{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
 	background-position: -197px -7px;
 }
 
 .icon-gp-round{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
 	background-position: -232px -7px;
 }
 
 .icon-pin-round{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
 	background-position: -267px -7px;
 }
 
-//========================================
+//-----------------------------------------
 SOCIAL ICONS LOGO GREY
-//========================================
+//-----------------------------------------
 
 .icon-fb-logo-grey{
-	background-position: -20px -89px;
+	background-position: -8px -81px;
 }
 
 .icon-tw-logo-grey{
-	background-position: -56px -92px;
+	background-position: -47px -82px;
 }
 
 .icon-pin-logo-grey{
-	background-position: -94px -88px;
+	background-position: -85px -82px;
 }	
 
-//========================================
+//-----------------------------------------
 SOCIAL ICONS LOGO COLOR
-//========================================
+//-----------------------------------------
 
 .icon-fb-logo-color{
-	background-position: -135px -89px;
+	background-position: -123px -82px;
 }
 
 .icon-tw-logo-color{
-	background-position: -171px -92px;
+	background-position: -162px -81px;
 }
 
-.icon-pin-logo-color{
-	background-position: -209px -88px;
+.icon-pin-logo-color{	
+	background-position: -200px -81	px;
 }
 
-//========================================
-SOCIAL ICONS LOGO COLOR
-//========================================
+//-----------------------------------------
+ONLINE PAYMENT PARTNERS	
+//-----------------------------------------
+
+.icon-visacard{
+	display: inline-block;
+	width: 51px;
+	height: 32px;
+	background-position: -7px -126px;
+}
+
+.icon-mastercard{
+	display: inline-block;
+	width: 51px;
+	height: 32px;
+	background-position: -62px -126px;
+}
+
+.icon-maestro{
+	display: inline-block;
+	width: 51px;
+	height: 32px;
+	background-position: -118px -126px;
+}
+
+//=============================
+Google Play
+//=============================
+.icon-googleplay{
+	display: inline-block;
+	width: 78px;
+	height: 28px;
+	background-position: -175px -128px;
+}

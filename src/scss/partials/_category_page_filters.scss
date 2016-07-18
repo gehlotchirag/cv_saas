@@ -171,11 +171,11 @@ ul.sub-menu{
     a{
 		@include text-decoration(none);
 		&:link, &:visited{
-			text-color: $filter_link_default;
+			color: $filter_link_default;
 		}
 
 		&:hover{
-			text-color: $filter_link_hover;
+			color: $filter_link_hover;
 		}
 	}
 }
